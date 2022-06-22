@@ -1,29 +1,31 @@
 <html>
+<head>
+    <title>Login page</title>
+</head>
 <body>
-<?php
- <form>
-  <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
-  </div>
-
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
-?>
+    <form action="16a.php" method = post>
+        <table align="center">
+            <tr>
+                <th colspan="2">
+                    <h2 align="center">Login</h2>
+                </th>
+            </tr>
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="uname"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="pwd" value="12345"></td>
+            </tr>
+            <tr>
+                <td>Reset Password:</td>
+                <td><input type="reset" name="res"></td>
+            </tr>
+            <tr>
+                <td align="right" colspan="2"><input type="submit" name="login" value="login"></td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>
